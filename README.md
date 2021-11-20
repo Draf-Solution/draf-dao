@@ -6,7 +6,7 @@ As such, it is decided to create a DAO in which participants can vote to have a 
 
 As of 20 Nov 2021, a name for this DAO have yet to be decided. As such, we will call it DrafDao for now.
 
-High Level Components for the dao involves:-
+## High Level Components
 
 1) Pricing Backend
 2) Pricing Frontend
