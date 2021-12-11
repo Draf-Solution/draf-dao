@@ -84,16 +84,16 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     //   allowUnlimitedContractSize: true,
     //   accounts: ["ca6119e124c9498943f3ae09b2ca5c0b0f7bf72fb7438dabee01146d87542dc5"]
     // },
-    // binance: {
-    //   url: "https://data-seed-prebsc-2-s3.binance.org:8545/",
-    //   gas: 30000000,
-    //   blockGasLimit: 150000000,
-    //   throwOnTransactionFailures: true,
-    //   throwOnCallFailures: true,
-    //   timeout: 1800000,
-    //   allowUnlimitedContractSize: true,
-    //   accounts: ["dd4026f0b834623369c83f0ff97ddfde5d988dc769bf8fdef8ae6aed0993450c"]
-    // },
+    binance: {
+      url: "https://data-seed-prebsc-2-s3.binance.org:8545/",
+      gas: 30000000,
+      blockGasLimit: 150000000,
+      throwOnTransactionFailures: true,
+      throwOnCallFailures: true,
+      timeout: 1800000,
+      allowUnlimitedContractSize: true,
+      accounts: ["dd4026f0b834623369c83f0ff97ddfde5d988dc769bf8fdef8ae6aed0993450c"]
+    },
     // moonbeam: {
     //   url: "https://rpc.testnet.moonbeam.network",
     //   gas: 1500000,

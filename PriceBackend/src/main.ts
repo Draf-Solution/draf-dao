@@ -1,8 +1,6 @@
 import { NestFactory } from "@nestjs/core";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { AppModule } from "./module/app.module";
-import { join } from "path";
-import * as express from "express";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
