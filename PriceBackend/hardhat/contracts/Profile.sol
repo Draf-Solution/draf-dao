@@ -1,4 +1,7 @@
+//SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
+
+import "hardhat/console.sol";
 
 contract Profile {
     // [address user_address][string token_contract] -> Asset
