@@ -74,6 +74,16 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
       allowUnlimitedContractSize: true,
       accounts: ["30a66e99beb1acbb5099c21281b9b902c5619fc0db9d3afc89647785143c23f9"]
     },
+    drafsoln: {
+      url: "http://drafsoln.asuscomm.com:8545",
+      gas: 20000000000,
+       blockGasLimit: 150000000,
+      throwOnTransactionFailures: true,
+      throwOnCallFailures: true,
+      timeout: 1800000,
+      allowUnlimitedContractSize: true,
+      accounts: ["ca6119e124c9498943f3ae09b2ca5c0b0f7bf72fb7438dabee01146d87542dc5"]
+    },
     // forms: {
     //   url: "http://besu.formsdev.net/jsonrpc",
     //   gas: 150000000,
