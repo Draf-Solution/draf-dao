@@ -34,7 +34,7 @@ jobs:
         run: |
           cd ./PriceBackend/hardhat
           npm install --save-dev hardhat
-          npx hardhat run scripts/deploy.js
+          npx hardhat run --network drafsoln scripts/deploy.js 
           cd ..
           yarn
           yarn build
