@@ -23,8 +23,6 @@ async function main() {
 
 
   console.log("Profile deployed to:", contractProfile.address);
-  let strURL = await hre.config.networks;
-  console.log(strURL);
   let contractAddressesMap = {
     url : hre.config.networks.drafsoln.url,
     admin_pk : hre.config.networks.drafsoln.accounts[0],

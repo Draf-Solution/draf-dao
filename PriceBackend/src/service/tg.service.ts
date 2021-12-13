@@ -32,11 +32,24 @@ export class TgService {
     let res = await axios.get(config.tgGetUpdatesUrl);
 
     console.log(res.data);
-    let objChatHistory = res.data.result[0].message;
-    console.log(objChatHistory);
-    let objUserChatHistory = lodash.filter(objChatHistory, x => {return(x.chat.username == strTgUsername)});
+    let objChatHistory = res.data;
+    //Change array to map for lodash
+    /*
+    let resEntries = {};
+    for(let i =0; i < objChatHistory.length; i++)
+    {
+      resEntries[update_id] = objChatHistory[i].message; 
+
+    }
+
+    console.log(resEntries);
+        */
+    let objUserChatHistory = lodash.filter(objChatHistory.result, x => {return(x.message.chat.username == strTgUsername)});
     console.log(objUserChatHistory);
-    let objLatestChatHistory = lodash.maxBy(objUserChatHistory.update_id);
+
+   console.log("testing maxby")
+    let objLatestChatHistory = lodash.maxBy(objUserChatHistory, x => {return(x.update_id)});
+    console.log(objLatestChatHistory);
     let strChatID : string = objLatestChatHistory.message.chat.id;
 
 
