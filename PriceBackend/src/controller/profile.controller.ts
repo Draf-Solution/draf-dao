@@ -1,4 +1,4 @@
-import { ProfileService } from "@/service/profile.service";
+import { ProfileService } from "../service/profile.service";
 import { Body, Controller, Get , Post, Query} from "@nestjs/common";
 import {
   ApiBearerAuth,
