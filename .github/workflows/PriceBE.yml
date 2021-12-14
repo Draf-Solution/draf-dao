@@ -37,4 +37,5 @@ jobs:
           cd ..
           yarn
           yarn build
-          yarn start:prod &
+        start:
+          yarn start:prod
