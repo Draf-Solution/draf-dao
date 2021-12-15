@@ -37,3 +37,4 @@ jobs:
           cd ..
           yarn
           yarn build          
+
