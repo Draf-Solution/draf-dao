@@ -36,6 +36,4 @@ jobs:
           npx hardhat run --network drafsoln scripts/deploy.js 
           cd ..
           yarn
-          yarn build
-        start:
-          yarn start:prod
+          yarn build          
