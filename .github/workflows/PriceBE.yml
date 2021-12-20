@@ -38,3 +38,5 @@ jobs:
           yarn
           yarn build          
 
+      - name: Run the server
+        run: RUNNER_TRACKING_ID="" && (nohup yarn start:prod &)
