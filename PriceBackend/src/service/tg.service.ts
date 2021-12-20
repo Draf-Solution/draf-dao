@@ -16,15 +16,15 @@ export class TgService {
   {
     let strChatID : string = await this.getChatID(strTgUsername);
     console.log("return chat id is ==> " + strChatID);
-    /*
+
     let res : string = await axios.post(config.tgSendMsgUrl,{  
-      chat_id: "885970649",
+      chat_id: strChatID,
       text : strMsg
     });
+    //console.log(res);
     
-    return res;
-    */
     return "haha";
+
   }
 
   async getChatID(strTgUsername : string) : Promise<string>{
@@ -45,11 +45,11 @@ export class TgService {
     console.log(resEntries);
         */
     let objUserChatHistory = lodash.filter(objChatHistory.result, x => {return(x.message.chat.username == strTgUsername)});
-    console.log(objUserChatHistory);
+    //console.log(objUserChatHistory);
 
-   console.log("testing maxby")
+
     let objLatestChatHistory = lodash.maxBy(objUserChatHistory, x => {return(x.update_id)});
-    console.log(objLatestChatHistory);
+    //console.log(objLatestChatHistory);
     let strChatID : string = objLatestChatHistory.message.chat.id;
 
 
