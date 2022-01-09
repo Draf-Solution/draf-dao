@@ -102,7 +102,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
       throwOnCallFailures: true,
       timeout: 1800000,
       allowUnlimitedContractSize: true,
-      accounts: ["dd4026f0b834623369c83f0ff97ddfde5d988dc769bf8fdef8ae6aed0993450c"]
+      accounts: ["30a66e99beb1acbb5099c21281b9b902c5619fc0db9d3afc89647785143c23f9"]
     },
     // moonbeam: {
     //   url: "https://rpc.testnet.moonbeam.network",

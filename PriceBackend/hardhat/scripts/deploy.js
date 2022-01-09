@@ -21,8 +21,16 @@ async function main() {
 
   await contractProfile.deployed();
 
+  const BasicFactory = await hre.ethers.getContractFactory("Basic");
+  const contractBasic = await BasicFactory.deploy(ethers.utils.parseEther("1000"));
+
+  await contractBasic.deployed();
+
 
   console.log("Profile deployed to:", contractProfile.address);
+
+  console.log("Basic Token deployed to:", contractBasic.address);
+
   let contractAddressesMap = {
     url : hre.config.networks.drafsoln.url,
     admin_pk : hre.config.networks.drafsoln.accounts[0],
