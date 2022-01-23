@@ -6,6 +6,10 @@ As such, it is decided to create a DAO in which participants can vote to have a 
 
 As of 20 Nov 2021, a name for this DAO have yet to be decided. As such, we will call it DrafDao for now.
 
+
+Major Motions Moved
+15 Jan 2022 - Decides to add the Red Packet module. 
+
 ## High Level Components
 
 1) Pricing Backend
@@ -19,3 +23,4 @@ As of 20 Nov 2021, a name for this DAO have yet to be decided. As such, we will 
         - Cat, Cows, Doges, Chimps, Apes, Robots, etc etc...
     - Change shirt depending on the best performing asset
         - Calls swagger.
+5) Red Packet
