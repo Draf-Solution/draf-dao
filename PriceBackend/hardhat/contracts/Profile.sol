@@ -6,7 +6,7 @@ import "hardhat/console.sol";
 contract Profile {
     // [address user_address][string token_contract] -> Asset
     mapping(address => mapping(string => Asset)) profile;
-    
+    mapping(address => string ) listTgUsernames;
     struct Asset {
         string token_symbol;    // e.g. "bnb"
         string token_contract;  // e.g. "0xB8c77482e45F1F44dE1745F52C74426C631bDD52"
@@ -16,6 +16,19 @@ contract Profile {
         int amount;             // e.g. 100000000000000
         string description;     // e.g. "My First BNB Account"
     }
+
+    function setTgUsername(
+        string memory strTgUsername
+    ) public {
+        listTgUsernames[msg.sender] = strTgUsername;
+    }
+
+    function getTgUsername(
+        string memory token_contract
+    ) public view returns(string memory) {
+        return listTgUsernames[msg.sender];
+    }
+     
 
     function addAsset(
         Asset memory asset

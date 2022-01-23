@@ -1,0 +1,4 @@
+{
+    "tgSendMsgUrl" : "https://api.telegram.org/bot5096352284:AAFyb4T0Q8oBDDwyYRQit6-fBMNsiSorH3s/sendMessage",
+    "tgGetUpdatesUrl" : "https://api.telegram.org/bot5096352284:AAFyb4T0Q8oBDDwyYRQit6-fBMNsiSorH3s/getUpdates"
+}
